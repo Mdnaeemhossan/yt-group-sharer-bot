@@ -17,16 +17,16 @@ logger = logging.getLogger(__name__)
 AWAITING_GROUP_LINK, AWAITING_GROUP_NAME, AWAITING_VIDEO_URL = range(3)
 
 DEFAULT_GROUPS = [
-    {"name": "YouTube Creators Network", "link": "https://t.me/youtubecreators", "niche": "YouTube", "added": "preset"},
-    {"name": "SEO & Digital Marketing", "link": "https://t.me/seodigitalmarketing", "niche": "SEO/Marketing", "added": "preset"},
-    {"name": "Video Marketing Hub", "link": "https://t.me/videomarketinghub", "niche": "Video", "added": "preset"},
-    {"name": "YouTube Growth Community", "link": "https://t.me/ytgrowth", "niche": "YouTube", "added": "preset"},
-    {"name": "Digital Marketers UK", "link": "https://t.me/digitalmarketersuk", "niche": "UK Marketing", "added": "preset"},
-    {"name": "Content Creators", "link": "https://t.me/contentcreatorshub", "niche": "Content", "added": "preset"},
-    {"name": "Promote YouTube Videos", "link": "https://t.me/promoteyoutube", "niche": "YouTube Promo", "added": "preset"},
-    {"name": "Social Media Marketing", "link": "https://t.me/socialmediamarketinggroup", "niche": "Social Media", "added": "preset"},
-    {"name": "YouTube Subscribers Exchange", "link": "https://t.me/ytsubsexchange", "niche": "YouTube Growth", "added": "preset"},
-    {"name": "Viral Content Sharing", "link": "https://t.me/viralcontentsharing", "niche": "Viral/Content", "added": "preset"},
+    {"name": "Bengali Friends Club", "link": "https://t.me/bengali_friends_club", "niche": "Bangla Community", "added": "preset"},
+    {"name": "Bangladesh Community", "link": "https://t.me/Bangladesh", "niche": "BD Culture & News", "added": "preset"},
+    {"name": "The Daily Star BD", "link": "https://t.me/thedailystar", "niche": "Bangladesh News", "added": "preset"},
+    {"name": "Bangla Songs", "link": "https://t.me/bangla_songs", "niche": "Bangla Music", "added": "preset"},
+    {"name": "Bangladeshis in UK", "link": "https://t.me/bangladeshisuk", "niche": "UK Bangla Community", "added": "preset"},
+    {"name": "BD Community USA", "link": "https://t.me/bdcommunityusa", "niche": "USA Bangla Community", "added": "preset"},
+    {"name": "Bangladeshi in Australia", "link": "https://t.me/bangladeshiaustralia", "niche": "Australia BD Community", "added": "preset"},
+    {"name": "Probashi Bangladeshi", "link": "https://t.me/probashi_bd", "niche": "Diaspora Community", "added": "preset"},
+    {"name": "Bangla Community Europe", "link": "https://t.me/banglacommunityeurope", "niche": "Europe BD Community", "added": "preset"},
+    {"name": "Bangladesh UK Channel", "link": "https://t.me/bangladeshuk", "niche": "UK BD News & Community", "added": "preset"},
 ]
 
 def load_data():
