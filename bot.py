@@ -247,6 +247,15 @@ async def stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
             text += f"  {name}: {count} times\n"
     await update.message.reply_text(text)
 
+async def load_defaults(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    data = load_data()
+    data["groups"] = DEFAULT_GROUPS.copy()
+    save_data(data)
+    await update.message.reply_text(
+        f"\u2705 Loaded {len(DEFAULT_GROUPS)} default Bangladeshi community groups!\n"
+        "Use /groups to see them all, then /share to share your video."
+    )
+
 async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Cancelled.")
     return ConversationHandler.END
@@ -290,6 +299,7 @@ def main():
     app.add_handler(CommandHandler("find", find_groups))
     app.add_handler(CommandHandler("history", history))
     app.add_handler(CommandHandler("stats", stats))
+    app.add_handler(CommandHandler("load_defaults", load_defaults))
     app.add_handler(addgroup_conv)
     app.add_handler(share_conv)
     app.add_handler(CallbackQueryHandler(button_router))
